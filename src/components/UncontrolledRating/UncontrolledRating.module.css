@@ -1,0 +1,8 @@
+.uncontrolledRating {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.uncontrolledRating span {
+    padding: 5px;
+}
