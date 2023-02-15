@@ -15,7 +15,7 @@ export function UncontrolledRating() {
     )
 }
 
-type StarPropsType = {
+type StarPropsType ={
     selected: boolean
     setValue: (value: 1 | 2 | 3 | 4 | 5) => void
     value: 1 | 2 | 3 | 4 | 5
