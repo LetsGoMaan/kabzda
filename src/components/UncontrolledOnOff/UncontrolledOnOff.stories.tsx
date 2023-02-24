@@ -8,7 +8,7 @@ export default {
   component: UncontrolledOnOff,
 };
 
-const callback = action('on or off clicked')
+
 
 
 export const OnOffMode = () =>  <UncontrolledOnOff />
