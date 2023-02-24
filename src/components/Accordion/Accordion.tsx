@@ -47,8 +47,7 @@ type AccordionBOdyPropsType = {
 function AccordionBody (props: AccordionBOdyPropsType) {
     console.log("AccordionBody rendering");
     return (
-        <ul>
-            {props.items.map((i, index)=> <li onClick={()=>props.onClick(i.value)} key = {index}>{i.title}</li>)}
+        <ul>{props.items.map((i, index)=> <li onClick={()=>props.onClick(i.value)} key = {index}>{i.title}</li>)}
         </ul>
     )
 }
