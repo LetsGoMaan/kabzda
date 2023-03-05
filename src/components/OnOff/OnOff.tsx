@@ -1,5 +1,3 @@
-import {useState} from "react";
-
 type OnOffType = {
     on: boolean
     setOn: (value: boolean) => void
@@ -35,18 +33,21 @@ export function OnOff(props: OnOffType) {
     };
 
     return (
+        <>
 
-        <div>
-            <div style={onStyle} onClick={() => {
-                props.setOn(!props.on)
-            }}>On
+            <div>
+                <div style={onStyle} onClick={() => {
+                    props.setOn(!props.on)
+                }}>On
+                </div>
+                <div style={offStyle} onClick={() => {
+                    props.setOn(!props.on)
+                }}>Off
+                </div>
+                <div style={IndicatorStyle}></div>
             </div>
-            <div style={offStyle} onClick={() => {
-                props.setOn(!props.on)
-            }}>Off
-            </div>
-            <div style={IndicatorStyle}></div>
-        </div>
+        </>
+
     )
 }
 
