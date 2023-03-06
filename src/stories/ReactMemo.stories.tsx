@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 
 export default  {
     title: "React.memo demo",
@@ -20,6 +20,8 @@ const Users = React.memo(UsersSecret)
 export const Example1 = () => {
     const [counter, setCounter] = useState(0);
     const [users, setUsers] = useState(['Dimych', 'Valera', "Artem", "Natasha"]);
+
+
 
     return (
         <>
